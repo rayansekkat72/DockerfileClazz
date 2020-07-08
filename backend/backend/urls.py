@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import get_hosname
+from app.views import print_message
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', get_hosname),
+    path('test/', print_message),
 ]

@@ -8,3 +8,6 @@ def get_hosname(request):
         'hostname': socket.gethostname()
     }
     return JsonResponse(data)
+
+def print_message(request):
+   return JsonResponse({'message': "coucou"})
